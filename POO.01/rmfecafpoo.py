@@ -1,25 +1,6 @@
 """
 Sistema de Orçamento de Aluguel - Imobiliária R.M
 --------------------------------------------------
-Programa em Python 3, orientado a objetos, que calcula o orçamento
-mensal de aluguel para três tipos de imóvel (Apartamento, Casa e
-Estúdio), calcula o valor da parcela do contrato imobiliário e gera
-um arquivo .csv com a projeção do aluguel ao longo de 12 meses.
-
-Este código foi pensado para fins didáticos (estudante iniciante em
-programação), por isso os comentários explicam cada parte da lógica.
-
-CORREÇÕES APLICADAS APÓS BATERIA DE TESTES:
-  1. Tratamento de EOFError/KeyboardInterrupt nas funções de entrada,
-     evitando que o programa quebre com traceback se a entrada de
-     dados for interrompida.
-  2. Cálculo das parcelas do contrato com precisão decimal (usando o
-     módulo `decimal`), ajustando a última parcela para que a soma
-     das parcelas seja sempre igual ao valor total do contrato (sem
-     "sobra" de centavos por arredondamento).
-  3. Formatação monetária no padrão brasileiro (vírgula como separador
-     decimal), tanto na tela quanto no arquivo .csv gerado.
-"""
 
 import csv
 import sys
